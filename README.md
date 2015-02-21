@@ -11,9 +11,6 @@ API Hook that provides the automation of the Authentication and Authorisation fo
     - Save the Key and secret from the result
     - Then, generate a non-expiring read/write token by typing this into your browser: https://trello.com/1/authorize?key=substitutewithyourapplicationkey&name=My+Application&expiration=never&response_type=token&scope=read,write
     - save the non-expiry token
-- login to the  [Google Apps for work Admin Console] (https://admin.google.com) select the security icon, scroll to the botom of the admin page and select the "Show more" link, select the "Advanced Settings" link that appears, then the "Manage API client access" link.
-- in the "Client Name" field paste the Service Account ClientId you coppied, then copy this list of API scopes into the Scopes field and click the "Authorize" button:
-    https://spreadsheets.google.com/feeds,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly
 
 ### Getting Started Instructions
 #### Download and Import
@@ -26,27 +23,31 @@ API Hook that provides the automation of the Authentication and Authorisation fo
 - this will create a "Trello API Hook" Organisation with the requisite artefacts needed to run the API.
 
 #### Verify Import
-- Expand the services folder in the Google Sheets API Hook you imported and find Trello_vs0 VS
+- Expand the services folder in the Trello API Hook organisation you imported and find Trello_vs0 VS
 
 #### Activate Anonymous Contract
-- Expand the contracts folder in the Google Drive API Hook you imported and find the "Anonymous" contract under the "Provided Contracts" folder
+- Expand the contracts folder in the Trello API Hook organisation you imported and find the "Anonymous" contract under the "Provided Contracts" folder
 - click on the "Activate Contract" workflow activity in the righ-hand Activities portlet
 - ensure that the status changes to "Workflow Is Completed"
 
 #### Configure Security
 - Go to Trello Hook -> Policies -> Operational Policies 
-- For the four Policies defined there:
-    - select a policy
-    - click on the "Activate Policy" workflow activity in the righ-hand Activities portlet
-    - ensure that the status changes to "State: Active"
-- Go to the PM "Security" tab
-- Click the "Add User" button
-- make the "Username" the value of the Key you generated as part of the pre-requisites
-- make the "password" the value of the Token you generated as part of the pre-requisites
-- make the "Full Name" the value of "Trello Key"
-- make the "First Name" the value of your first name
-- make the "Last Name" the value of your last name
-- save the new user
+    - For the four Policies defined there:
+        - select a policy
+        - click on the "Activate Policy" workflow activity in the righ-hand Activities portlet
+        - ensure that the status changes to "State: Active"
+    - Go to the PM "Security" tab
+    - Click the "Add User" button
+    - make the "Username" the value of the Key you generated as part of the pre-requisites
+    - make the "password" the value of the Token you generated as part of the pre-requisites
+    - make the "Full Name" the value of "Trello Key"
+    - make the "First Name" the value of your first name
+    - make the "Last Name" the value of your last name
+    - save the new user
+- Unzip the com.soa.pso.policy.Trello_1.0.0.zip file into the /sm70 directory of you ND installation(s). For Each ND:
+    - restart your ND
+    - loging to the ND Admin console
+    - select the "Insert Trello Credentials Policy Handler" Policy in the "Avaialble Features" tab and follow the Wizard installation instrauctions
 
 #### Verify Connectivity
 - curl --user username:password http://"ND Servername and port"/trello/members/my/boards
