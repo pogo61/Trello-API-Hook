@@ -47,7 +47,7 @@ API Hook that provides the automation of the Authentication and Authorisation fo
 - Unzip the com.soa.pso.policy.Trello_1.0.0.zip file into the /sm70 directory of you ND installation(s). For Each ND:
     - restart your ND
     - loging to the ND Admin console
-    - select the "Insert Trello Credentials Policy Handler" Policy in the "Avaialble Features" tab and follow the Wizard installation instrauctions
+    - select the "Insert Trello Credentials Policy Handler" Policy in the "Avaialble Features" tab and follow the Wizard installation instructions
 
 #### Verify Connectivity
 - curl --user username:password http://"ND Servername and port"/trello/members/my/boards
