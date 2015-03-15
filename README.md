@@ -6,6 +6,20 @@ API Hook that provides the automation of the Authentication and Authorisation fo
 - API Documentation: [Trello API docs] (https://trello.com/docs/index.html)
 
 ### Pre-Reqs
+- you must install the pso extensions custom polices:
+    + unzip the com.soa.pso.policy.restmsg_7.1.3.jar into the <Policy Manager Home>/sm70 directory. This will result in files placed in the sm70/lib/pso.opeapi.extensions_7.2.2 subdirectory
+    + restart both PM and ND(s)
+    + Using the SOA Admin Console, install the following features in each PM container:
+        * SOA Professional Services OpenAPI Extensions
+        * SOA Professional Services OpenAPI Extensions UI
+    + Using the SOA Admin Console, install the following features in each ND container:
+        * SOA Professional Services OpenAPI Extensions
+- you must install the com.soa.pso.policy.Trello_1.0.0.zip nto the <Policy Manager Home>/sm70 directory. This will result in files placed in the sm70/lib/pso.policy.Trello_1.0.0 subdirectory
+    + restart ND(s) only
+    +  Using the SOA Admin Console, on each ND:
+        * select the Insert Trello Credentials Policy Handler feature  
+        * press the "install" button
+        * follow the install wizard instructions and restart the ND
 - while logged into your Trello Account:
     - generate an application key by typing this into your browser: https://trello.com/1/appKey/generate
     - Save the Key and secret from the result
