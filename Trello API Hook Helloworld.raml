@@ -1,0 +1,11 @@
+#%RAML 0.8
+title: Trello API Hook
+version: 1.0
+baseUri: http://win7-64-vm:9905/tello_hook
+/helloworld:
+  get:
+    description: <<returns all the Trello Boards you own>>
+    responses:
+      200:
+        body:
+          application/atom+xml:
