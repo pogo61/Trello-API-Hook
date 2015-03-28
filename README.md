@@ -1,4 +1,9 @@
-# Trello-API-Hook
+# Akana API HOOK
+![Image of Akana] 
+(https://www.akana.com/img/formerlyLOGO8.png) 
+[Akana.com](http://akana.com)
+
+## Trello-API-Hook
 API Hook that provides the automation of the Authentication and Authorisation for calls to the Trello API
 ## Trello API 
 ### About the API
