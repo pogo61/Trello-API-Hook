@@ -5966,7 +5966,7 @@ API Hook that provides the automation of the Authentication and Authorisation fo
 
 ### How Hello World Works
 #### An Akana Integration Primer
-The Google_Sheets_API_Hook API is a "Virtual Service". That is, its interface is not that of a real service implementation. It can be a proxy to a "real" implementation, or it can be an aggregate (a combination) of a number of "real" implementations. In Policy Manager a "real" implementation is called a "Physical Service".
+The Trello_API_Hook API is a "Virtual Service". That is, its interface is not that of a real service implementation. It can be a proxy to a "real" implementation, or it can be an aggregate (a combination) of a number of "real" implementations. In Policy Manager a "real" implementation is called a "Physical Service".
 Apart from offering a different interface to the Physical Service, a Virtual Service offers the ability to attach Policies for security, logging, QoS, and a number of other non-functional capabilities.
 Virtual Services also have the ability to have Custom Process and Scripts run before the Physical Service is called. Here is where a lot of the magic of Integration occurs.
 
@@ -5983,7 +5983,7 @@ To create the helloworld operation the following was added to a base RAML docume
 Then a VS was created by using the RAML as the definition source.
 Then the /helloworld Operation in the VS was mapped to the GET /members_my_boards operation in the Trello_API_Hook PS.
 
-Go to the TRello_API_Helloworld VS -> Operations Tab -> GET /hellowworld operation -> Process tab you'll see this image:
+Go to the Trello_API_Helloworld VS -> Operations Tab -> GET /hellowworld operation -> Process tab you'll see this image:
 ![Helloworld process] 
 (https://github.com/pogo61/Trello-API-Hook/blob/master/Hello%20World.png)
 
@@ -5992,7 +5992,7 @@ Double click on the invoke activity to see how these work to make the Hello Worl
 
 ### Create Your Own Integration with the Context.io API
 The Hello World operation is one simple way of integrating or extending your API's.
-Take a look at the [Context.io API Integration](https://github.com/pogo61/Trello-API-Integration).
+Take a look at the [Trello to Google API Integration](https://github.com/pogo61/Trello-to-Google-API-Integration).
 this will give you a deeper inderstanding of the richness of our gateway product in integrating to API's
 
 ### Modify and Build
