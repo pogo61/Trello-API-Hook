@@ -5992,7 +5992,7 @@ Double click on the invoke activity to see how these work to make the Hello Worl
 
 ### Create Your Own Integration with the Context.io API
 The Hello World operation is one simple way of integrating or extending your API's.
-Take a look at the [Trello to Google API Integration](https://github.com/pogo61/Trello-to-Google-API-Integration).
+Take a look at the [Trello to Google API Integration](https://github.com/pogo61/Trello-to-Google-API-Integration), or the [Google to Trello API Integration](https://github.com/pogo61/Google-to-Trello-API-Integration).
 this will give you a deeper inderstanding of the richness of our gateway product in integrating to API's
 
 ### Modify and Build
